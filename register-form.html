@@ -34,8 +34,22 @@
             <div class="password">
               <label>
                 <p>Password</p>
-                <input type="password" name="password" />
+                <input
+                  type
+                  name="password"
+                  required
+                  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+                  oninvalid="this.setCustomValidity('Mínimo 8 carácteres y un número y una mayuscula y un signo')"
+                  oninput="this.setCustomValidity('')"
+                />
               </label>
+              <ul>
+                <li>One lowercase character</li>
+                <li>One uppercase character</li>
+                <li>One number</li>
+                <li>One special character</li>
+                <li>8 character minimum</li>
+              </ul>
             </div>
             <br /><br />
             <div>
