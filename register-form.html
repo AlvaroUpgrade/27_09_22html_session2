@@ -5,44 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mailchimp</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="./images/mono.png" alt="Imagen logo de la pagina" />
-    <h1>Welcome to Mailchimp</h1>
-    <p>
-      Find your people.Engage your customers. Build your brand. Do it all with
-      Mailchimp´s Marketing Platform. Already have an account? Log in
-    </p>
-    <div>
-      <form action="/" method="post">
-        <label>
-          <p>Email</p>
-          <input type="email" name="user" />
-        </label>
-        <label>
-          <p>Username</p>
-          <input type="text" name="user" />
-        </label>
-        <label>
-          <p>Password</p>
-          <input type="password" name="password" />
-        </label>
-        <br /><br />
-        <div>
-          <input type="Button" value="Sign up" />
-          <input type="checkbox" />
-          <label>
-            I don´t want to receive emails about new Mailchimp products, best
-            practices, or special offers.
-          </label>
-        </div>
-      </form>
-      <div>
+    <div class="content">
+      <img src="./images/mono.png" alt="Imagen logo de la pagina" />
+      <div class="formulary">
+        <h1>Welcome to Mailchimp</h1>
         <p>
-          By clicking the "Sign Up" button, you are cheating a Mailchimp
-          account, and you agree to Mailchimp´s <a href="/">Terms of Use</a> and
-          <a href="/">Privacy Policy</a>.
+          Find your people.Engage your customers. Build your brand. Do it all
+          with Mailchimp´s Marketing Platform. Already have an account?
+          <a href="/">Log in</a>
         </p>
+        <div>
+          <form action="/" method="post">
+            <div class="email">
+              <label>
+                <p>Email</p>
+                <input type="email" name="user" />
+              </label>
+            </div>
+            <div class="username">
+              <label>
+                <p>Username</p>
+                <input type="text" name="user" />
+              </label>
+            </div>
+            <div class="password">
+              <label>
+                <p>Password</p>
+                <input type="password" name="password" />
+              </label>
+            </div>
+            <br /><br />
+            <div>
+              <input type="Button" value="Sign up" />
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label>
+                I don´t want to receive emails about new Mailchimp products,
+                best practices, or special offers.
+              </label>
+            </div>
+          </form>
+          <div>
+            <p>
+              By clicking the "Sign Up" button, you are cheating a Mailchimp
+              account, and you agree to Mailchimp´s
+              <a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
